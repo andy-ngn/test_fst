@@ -5,7 +5,9 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd apps/client && yarn build",
+    "start": "yarn build && node apps/server/index.js"
   },
   "workspaces": [
     "packages/*",
@@ -14,7 +16,8 @@
   "devDependencies": {
     "typescript": "latest",
     "@types/node": "latest",
-    "eslint": "^8"
+    "eslint": "^8",
+    "dotenv": "latest"
   },
   "keywords": [],
   "author": "",

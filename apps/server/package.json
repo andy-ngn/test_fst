@@ -9,7 +9,12 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "latest"
+    "express": "latest",
+    "body-parser": "latest",
+    "cors": "latest"
+  },
+  "devDependencies": {
+    "@types/express": "latest"
   },
   "keywords": [],
   "author": "",
